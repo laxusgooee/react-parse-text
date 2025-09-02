@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from 'prop-types';
+import React from 'react';
 
-import TextExtraction from "./lib/TextExtraction";
-import { cn } from "./lib/utils";
+import TextExtraction from './lib/TextExtraction';
+import { cn } from './lib/utils';
 
 /**
  * This is a list of the known patterns that are provided by this library
@@ -61,7 +61,7 @@ const customParseShape = PropTypes.shape({
 
 /** @type {import('react').ComponentClass<ParsedTextProps>} */
 class ParsedText extends React.Component {
-  static displayName = "ParsedText";
+  static displayName = 'ParsedText';
 
   static propTypes = {
     ...Text.propTypes,
@@ -98,7 +98,7 @@ class ParsedText extends React.Component {
     if (!this.props.parse) {
       return this.props.children;
     }
-    if (typeof this.props.children !== "string") {
+    if (typeof this.props.children !== 'string') {
       return this.props.children;
     }
 

@@ -1,5 +1,5 @@
-declare module "react-parsed-text" {
-  import { Component } from "react";
+declare module 'react-parsed-text' {
+  import { Component } from 'react';
 
   interface TextProps {
     children: string;
@@ -9,7 +9,7 @@ declare module "react-parsed-text" {
   interface BaseParseShape
     extends Pick<
       TextProps,
-      Exclude<keyof TextProps, "onPress" | "onLongPress">
+      Exclude<keyof TextProps, 'onPress' | 'onLongPress'>
     > {
     /** arbitrary function to rewrite the matched string into something else */
     renderText?: (matchingString: string, matches: string[]) => string;
@@ -21,7 +21,7 @@ declare module "react-parsed-text" {
    * This is for built-in-patterns already supported by this library
    */
   interface DefaultParseShape extends BaseParseShape {
-    type: "url" | "phone" | "email";
+    type: 'url' | 'phone' | 'email';
   }
   /**
    * If you want to provide a custom regexp, this is the configuration to use.

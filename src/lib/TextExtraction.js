@@ -114,14 +114,14 @@ class TextExtraction {
 
     Object.keys(matchedPattern).forEach((key) => {
       if (
-        key === "pattern" ||
-        key === "renderText" ||
-        key === "nonExhaustiveModeMaxMatchCount"
+        key === 'pattern' ||
+        key === 'renderText' ||
+        key === 'nonExhaustiveModeMaxMatchCount'
       ) {
         return;
       }
 
-      if (typeof matchedPattern[key] === "function") {
+      if (typeof matchedPattern[key] === 'function') {
         // Support onPress / onLongPress functions
         props[key] = () => matchedPattern[key](text, index);
       } else {
@@ -133,7 +133,7 @@ class TextExtraction {
     let children = text;
     if (
       matchedPattern.renderText &&
-      typeof matchedPattern.renderText === "function"
+      typeof matchedPattern.renderText === 'function'
     ) {
       children = matchedPattern.renderText(text, matches);
     }
