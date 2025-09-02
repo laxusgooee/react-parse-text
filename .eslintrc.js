@@ -90,5 +90,6 @@ module.exports = {
     modules: true,
     experimentalObjectRestSpread: true,
   },
+  parser: 'babel-eslint',
   plugins: ['react'],
 };

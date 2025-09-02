@@ -35,8 +35,7 @@ export const PATTERNS = {
  * @property {KnownParsePattern} [type] key of the known pattern you'd like to configure
  * @property {number} [nonExhaustiveModeMaxMatchCount] Enables "non-exhaustive mode", where you can limit how many matches are found. -- Must be a positive integer or Infinity matches are permitted
  * @property {Function} [renderText] arbitrary function to rewrite the matched string into something else
- * @property {Function} [onPress]
- * @property {Function} [onLongPress]
+ * @property {Function} [onClick]
  */
 const defaultParseShape = PropTypes.shape({
   ...Text.propTypes,

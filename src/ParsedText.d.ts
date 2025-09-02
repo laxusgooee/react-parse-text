@@ -1,20 +1,19 @@
 declare module 'react-parse-text' {
-  import { Component } from 'react';
+  import { Component, ReactNode } from 'react';
 
   interface TextProps {
     children: string;
-    classNme?: string;
+    classNme?: ReactNode;
   }
 
   interface BaseParseShape
     extends Pick<
       TextProps,
-      Exclude<keyof TextProps, 'onPress' | 'onLongPress'>
+      Exclude<keyof TextProps, 'onClick'>
     > {
     /** arbitrary function to rewrite the matched string into something else */
     renderText?: (matchingString: string, matches: string[]) => string;
-    onPress?: (text: string, index: number) => void;
-    onLongPress?: (text: string, index: number) => void;
+    onClick?: (text: string, index: number) => void;
   }
 
   /**

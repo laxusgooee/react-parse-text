@@ -7,8 +7,7 @@
  * @property {RegExp} pattern
  * @property {number} [nonExhaustiveModeMaxMatchCount] Enables "non-exhaustive mode", where you can limit how many matches are found. -- Must be a positive integer or Infinity matches are permitted
  * @property {Function} [renderText] arbitrary function to rewrite the matched string into something else
- * @property {Function} [onPress]
- * @property {Function} [onLongPress]
+ * @property {Function} [onClick]
  */
 /**
  * Class to encapsulate the business logic of converting text into matches & props
@@ -122,7 +121,7 @@ class TextExtraction {
       }
 
       if (typeof matchedPattern[key] === 'function') {
-        // Support onPress / onLongPress functions
+        // Support onClick functions
         props[key] = () => matchedPattern[key](text, index);
       } else {
         // Set a prop with an arbitrary name to the value in the match-config
