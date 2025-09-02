@@ -1,4 +1,5 @@
 node_modules
+coverage
 assets
 .idea
 package-lock.json

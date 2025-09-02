@@ -8,7 +8,7 @@
     "prettier": "prettier",
     "prettier:all": "prettier --write '**/*.json' '**/*.js' '**/*.ts' ",
     "lint": "eslint",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "bugs": {
     "url": "https://github.com/laxusgooee/react-parsed-text/issues"
