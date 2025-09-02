@@ -1,6 +1,6 @@
 {
-  "name": "react-parsed-text",
-  "version": "0.0.1",
+  "name": "react-parse-text",
+  "version": "0.0.12",
   "description": "Parse text and make them into multiple text elements",
   "main": "src/ParsedText.js",
   "types": "src/ParsedText.d.ts",
@@ -11,13 +11,13 @@
     "test": "jest --passWithNoTests"
   },
   "bugs": {
-    "url": "https://github.com/laxusgooee/react-parsed-text/issues"
+    "url": "https://github.com/laxusgooee/react-parse-text/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/laxusgooee/react-parsed-text.git"
+    "url": "git+ssh://git@github.com/laxusgooee/react-parse-text.git"
   },
-  "homepage": "https://github.com/laxusgooee/react-parsed-text#readme",
+  "homepage": "https://github.com/laxusgooee/react-parse-text#readme",
   "keywords": ["text", "react", "url", "phone", "react", "react-component"],
   "peerDependencies": {
     "react": "*"

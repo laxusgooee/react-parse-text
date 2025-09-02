@@ -1,4 +1,4 @@
-declare module 'react-parsed-text' {
+declare module 'react-parse-text' {
   import { Component } from 'react';
 
   interface TextProps {
