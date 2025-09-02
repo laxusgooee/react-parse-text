@@ -2,8 +2,8 @@ declare module 'react-parse-text' {
   import { Component, ReactNode } from 'react';
 
   interface TextProps {
-    children: string;
-    classNme?: ReactNode;
+    children?: ReactNode;
+    className?: string;
   }
 
   interface BaseParseShape

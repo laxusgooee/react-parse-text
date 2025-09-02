@@ -1,6 +1,6 @@
 {
   "name": "react-parse-text",
-  "version": "0.0.12",
+  "version": "0.0.141",
   "description": "Parse text and make them into multiple text elements",
   "main": "src/ParsedText.js",
   "module": "src/ParsedText.js",
