@@ -1,0 +1,48 @@
+{
+    "name": "react-parsed-text",
+    "version": "0.0.1",
+    "description": "Parse text and make them into multiple text elements",
+    "main": "src/ParsedText.js",
+    "types": "src/ParsedText.d.ts",
+    "scripts": {
+        "prettier": "prettier",
+        "prettier:all": "prettier --write '**/*.json' '**/*.js' '**/*.ts' ",
+        "lint": "eslint",
+        "test": "jest"
+    },
+    "bugs": {
+        "url": "https://github.com/laxusgooee/react-parsed-text/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/laxusgooee/react-parsed-text.git"
+    },
+    "homepage": "https://github.com/laxusgooee/react-parsed-text#readme",
+    "keywords": [
+        "text",
+        "react",
+        "url",
+        "phone",
+        "react",
+        "react-component"
+    ],
+    "peerDependencies": {
+        "react": "*"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^6.8.0",
+        "@testing-library/react": "^16.3.0",
+        "eslint": "7.2.x",
+        "jest": "26.0.x",
+        "jest-environment-jsdom": "^30.1.2",
+        "prettier": "3.5.3"
+    },
+    "author": "laxusgooee",
+    "license": "MIT",
+    "dependencies": {
+        "prop-types": "^15.7.x"
+    },
+    "jest": {
+        "preset": "react"
+    }
+}
